@@ -12,52 +12,40 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        mesCorrespondente(0);
-        mesCorrespondente(1);
-        mesCorrespondente(12);
-        mesCorrespondente(13);
+        System.out.println(mesCorrespondente(0));
+        System.out.println(mesCorrespondente(1));
+        System.out.println(mesCorrespondente(12));
+        System.out.println(mesCorrespondente(13));
     }
 
-    public static void mesCorrespondente(int num){
-        switch (num){
+    public static String mesCorrespondente(int mes){
+        switch (mes){
             case 1:
-                System.out.println("Janeiro.");
-                break;
+                return "Janeiro.";
             case 2:
-                System.out.println("Fevereiro.");
-                break;
+                return "Fevereiro.";
             case 3:
-                System.out.println("Março.");
-                break;
+                return "Março.";
             case 4:
-                System.out.println("Abril.");
-                break;
+                return "Abril.";
             case 5:
-                System.out.println("Maio.");
-                break;
+                return "Maio.";
             case 6:
-                System.out.println("Junho.");
-                break;
+                return "Junho.";
             case 7:
-                System.out.println("Julho.");
-                break;
+                return "Julho.";
             case 8:
-                System.out.println("Agosto.");
-                break;
+                return "Agosto.";
             case 9:
-                System.out.println("Setembro.");
-                break;
+                return "Setembro.";
             case 10:
-                System.out.println("Outubro.");
-                break;
+                return "Outubro.";
             case 11:
-                System.out.println("Novembro.");
-                break;
+                return "Novembro.";
             case 12:
-                System.out.println("Dezembro.");
-                break;
+                return "Dezembro.";
             default:
-                System.out.println("Mês Desconhecido!");
+                return "Mês desconhecido.";
         }
     }
 }
